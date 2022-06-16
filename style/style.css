@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:wght@300&family=Source+Code+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: poppins;
+}
+
+body {
+  height: 100;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.app nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 100vh;
+  padding-top: 30px;
+}
+.app nav ul {
+  width: 100%;
+  padding: 0 15px;
+}
+.app nav ul li {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 5px;
+  position: relative;
+  transition: 0.3s ease-out;
+}
+.app nav ul li.active {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(221, 221, 221);
+}
+.app nav ul li.active::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  transform: translateY(50%);
+  left: -3px;
+  width: 6px;
+  height: 75%;
+  border-radius: 10px;
+  background-color: royalblue;
+}
+.app nav ul li:hover {
+  background-color: rgb(214, 214, 214);
+}
+.app nav ul li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(88, 88, 88);
+  width: 100%;
+  height: 100%;
+}
+.app nav ul li a h3 {
+  font-weight: 500;
+  font-size: 15px;
+}
+.app nav ul li a i {
+  padding: 0 10px 0 0;
+}
+.app .sidebar-right {
+  width: 100%;
+  min-height: 100vh;
+}
+.app .sidebar-right .navbarTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+}
+.app .sidebar-right .navbarTop h3 {
+  font-size: 30px;
+}
+.app .sidebar-right .navbarTop .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: whitesmoke;
+  width: 400px;
+  padding: 0 5px;
+  height: 40px;
+  border-radius: 5px;
+}
+.app .sidebar-right .navbarTop .search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 10px;
+  background-color: transparent;
+}
+.app .sidebar-right .navbarTop .search i {
+  font-size: 22px;
+}
+.app .sidebar-right .navbarTop .profile-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.app .sidebar-right .navbarTop .profile-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.app .sidebar-right .navbarTop .profile-img i {
+  font-size: 18px;
+  padding-left: 10px;
+}/*# sourceMappingURL=style.css.map */
