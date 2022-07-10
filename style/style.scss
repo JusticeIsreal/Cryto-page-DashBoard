@@ -21,7 +21,7 @@ body {
 }
 
 .app {
-  @include flexDisplay(space-between, center, row);
+  @include flexDisplay(space-between, flex-start, row);
 
   nav {
     @include flexDisplay(space-between, center, column);
@@ -31,6 +31,8 @@ body {
     min-width: 300px;
     min-height: 100vh;
     padding-top: 30px;
+    position: sticky;
+    top: 0;
 
     ul {
       width: 100%;
@@ -89,9 +91,15 @@ body {
 
     .navbarTop {
       @include flexDisplay(space-between, center, row);
+      background-color: rgb(253, 253, 253);
+      z-index: 3;
       width: 100%;
       height: 70px;
       padding: 0 20px;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid rgba(221, 221, 221);
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.059);
 
       h3 {
         font-size: 30px;
@@ -105,7 +113,7 @@ body {
         height: 40px;
         border-radius: 5px;
         border: 1px solid rgb(221, 221, 221);
-        box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.138);
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.059);
 
         input {
           border: none;
@@ -150,6 +158,9 @@ body {
       margin-top: 30px;
 
       .top {
+        @include flexDisplay(space-between, flex-start, column);
+        color: white;
+        padding: 20px;
         width: 33.3%;
         height: 200px;
         border-radius: 10px;
@@ -185,6 +196,63 @@ body {
             #616161,
             #6b6b6b
           );
+        }
+        .currency-icon {
+          font-style: normal;
+          font-size: 50px;
+        }
+        .currency-details {
+          @include flexDisplay(space-between, center, row);
+          width: 100%;
+        }
+      }
+    }
+    .actions {
+      @include flexDisplay(space-between, flex-start, row);
+      gap: 25px;
+      padding: 0 20px;
+      width: 100%;
+      height: 100%;
+      margin-top: 50px;
+
+      .action-cards1 {
+        @include flexDisplay(space-between, center, column);
+
+        width: 45%;
+        gap: 20px;
+
+        div {
+          border: 1px solid rgba(221, 221, 221);
+          width: 100%;
+          height: 150px;
+          background-color: whitesmoke;
+          border-radius: 5px;
+        }
+      }
+      .action-cards2 {
+        border: 1px solid rgba(221, 221, 221);
+        width: 55%;
+        height: 100vh;
+        position: sticky;
+        top: 70px;
+        border-radius: 5px;
+        background-color: whitesmoke;
+
+        ul {
+          margin-top: 20px;
+          li {
+            @include flexDisplay(space-between, center, row);
+            margin-bottom: 20px;
+            padding: 0 5px;
+            border-bottom: 1px solid rgba(221, 221, 221);
+            h4{
+              font-weight: 400;
+              i{
+                padding-right: 10px;
+                font-size: 20px;
+              }
+            }
+          }
         }
       }
     }

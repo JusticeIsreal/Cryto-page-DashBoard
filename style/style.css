@@ -17,7 +17,7 @@ body {
 .app {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
 }
 .app nav {
@@ -31,6 +31,9 @@ body {
   min-width: 300px;
   min-height: 100vh;
   padding-top: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .app nav ul {
   width: 100%;
@@ -89,9 +92,16 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  background-color: rgb(253, 253, 253);
+  z-index: 3;
   width: 100%;
   height: 70px;
   padding: 0 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.059);
 }
 .app .sidebar-right .navbarTop h3 {
   font-size: 30px;
@@ -107,7 +117,7 @@ body {
   height: 40px;
   border-radius: 5px;
   border: 1px solid rgb(221, 221, 221);
-  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.138);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.059);
 }
 .app .sidebar-right .navbarTop .search input {
   border: none;
@@ -154,6 +164,12 @@ body {
   margin-top: 30px;
 }
 .app .sidebar-right .top-card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
   width: 33.3%;
   height: 200px;
   border-radius: 10px;
@@ -168,4 +184,70 @@ body {
 }
 .app .sidebar-right .top-card .top:nth-child(3) {
   background-image: linear-gradient(to top, #444444, #4d4d4d, #575757, #616161, #6b6b6b);
+}
+.app .sidebar-right .top-card .top .currency-icon {
+  font-style: normal;
+  font-size: 50px;
+}
+.app .sidebar-right .top-card .top .currency-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.app .sidebar-right .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 25px;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.app .sidebar-right .actions .action-cards1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  gap: 20px;
+}
+.app .sidebar-right .actions .action-cards1 div {
+  border: 1px solid rgb(221, 221, 221);
+  width: 100%;
+  height: 150px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.app .sidebar-right .actions .action-cards2 {
+  border: 1px solid rgb(221, 221, 221);
+  width: 55%;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.app .sidebar-right .actions .action-cards2 ul {
+  margin-top: 20px;
+}
+.app .sidebar-right .actions .action-cards2 ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+  padding: 0 5px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.app .sidebar-right .actions .action-cards2 ul li h4 {
+  font-weight: 400;
+}
+.app .sidebar-right .actions .action-cards2 ul li h4 i {
+  padding-right: 10px;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

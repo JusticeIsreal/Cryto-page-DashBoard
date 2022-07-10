@@ -1,79 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style/style.css" />
-    <title>Dash Board</title>
-  </head>
-  <body>
-    <div class="app">
-      <nav class="sidebar-left">
-        <ul>
-          <li class="active">
-            <a href="/index.html"
-              ><i class="bx bx-grid-alt"></i>
-              <h3>Dashboard</h3></a
-            >
-          </li>
-          <li>
-            <a href="/pages/wallet.html"
-              ><i class="bx bx-wallet"></i>
-              <h3>Wallet</h3></a
-            >
-          </li>
-          <li>
-            <a href="/pages/notification.html"
-              ><i class="bx bx-bell"></i>
-              <h3>Notification</h3></a
-            >
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="/pages/report.html"
-              ><i class="bx bxs-report"></i>
-              <h3>Report</h3></a
-            >
-          </li>
-          <li>
-            <a href="/pages/settings.html"
-              ><i class="bx bxs-cog"></i>
-              <h3>Setting</h3></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><i class="bx bxs-exit"></i>
-              <h3>LogOut</h3></a
-            >
-          </li>
-        </ul>
-      </nav>
 
-      <section class="sidebar-right">
-        <div class="navbarTop">
-          <h3>Dashboard</h3>
-          <div class="search">
-            <i class="bx bx-search-alt-2"></i>
-            <input type="serach" placeholder="Search..." name="" id="" />
-          </div>
-          <div class="profile-img">
-            <a href=""><img src="/img/img1.png" alt="profile-img" /> </a>
-            <a href=""><i class="bx bx-bell"></i></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style/style.css" />
+  <title>Dash Board</title>
+</head>
+
+<body>
+  <div class="app">
+    <nav class="sidebar-left">
+      <ul>
+        <li class="active">
+          <a href="/index.html"><i class="bx bx-grid-alt"></i>
+            <h3>Dashboard</h3>
+          </a>
+        </li>
+        <li>
+          <a href="/pages/wallet.html"><i class="bx bx-wallet"></i>
+            <h3>Wallet</h3>
+          </a>
+        </li>
+        <li>
+          <a href="/pages/notification.html"><i class="bx bx-bell"></i>
+            <h3>Notification</h3>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="/pages/report.html"><i class="bx bxs-report"></i>
+            <h3>Report</h3>
+          </a>
+        </li>
+        <li>
+          <a href="/pages/settings.html"><i class="bx bxs-cog"></i>
+            <h3>Setting</h3>
+          </a>
+        </li>
+        <li>
+          <a href=""><i class="bx bxs-exit"></i>
+            <h3>LogOut</h3>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="sidebar-right">
+      <div class="navbarTop">
+        <h3>Dashboard</h3>
+        <div class="search">
+          <i class="bx bx-search-alt-2"></i>
+          <input type="serach" placeholder="Search..." name="" id="" />
+        </div>
+        <div class="profile-img">
+          <a href="" target="_blank"><img src="/img/img1.png" alt="profile-img" /> </a>
+          <a href=""><i class="bx bx-bell"></i></a>
+        </div>
+      </div>
+      <main class="top-card">
+        <div class="top card1">
+          <i class="bx bxl-bitcoin currency-icon"></i>
+          <h2>356.25</h2>
+          <div class="currency-details">
+            <span>30% <i class="bx bxs-up-arrow "></i>
+            </span>
+            <h3>Bitcoin</h3>
           </div>
         </div>
-        <main class="top-card">
-          <div class="top card1"></div>
-          <div class="top card2"></div>
-          <div class="top card3"></div>
-        </main>
-      </section>
-    </div>
-  </body>
+        <div class="top card2"><i class="naira currency-icon"> &#8358</i>
+          <h2>2,254,146</h2>
+          <div class="currency-details">
+            <span>30% <i class="bx bxs-up-arrow"></i>
+            </span>
+            <h3>Naira</h3>
+          </div>
+        </div>
+        <div class="top card3"><i class="etherium currency-icon">&#240</i>
+          <h2>5,698.25</h2><div class="currency-details">
+            <span>30% <i class="bx bxs-up-arrow"></i>
+            </span>
+            <h3>Etherium</h3>
+          </div>
+        </div>
+      </main>
+
+      <main class="actions">
+        <div class="action-cards1">
+          <div>sgh</div>
+          <div>ssg</div>
+          <div>sgs</div>
+        </div>
+       <div class="action-cards2">
+        <h3>Top market</h3>
+        <ul>
+          <li><h4><i class="bx bxl-bitcoin"></i>Bitcoin</h4> <span>30%<i class="bx bxs-up-arrow"></i></span></li>
+          <li><h4><i class="bx bxl-bitcoin"></i>Bitcoin</h4> <span>40%<i class="bx bxs-up-arrow"></i></span></li>
+          <li><h4><i class="bx bxl-bitcoin"></i>Bitcoin</h4> <span>20%<i class="bx bxs-up-arrow"></i></span></li>
+          <li><h4><i class="bx bxl-bitcoin"></i>Bitcoin</h4> <span>60%<i class="bx bxs-up-arrow"></i></span></li>
+          <li><h4><i class="bx bxl-bitcoin"></i>Bitcoin</h4> <span>5%<i class="bx bxs-up-arrow"></i></span></li>
+          
+        </ul>
+       </div>
+      </main>
+    </section>
+  </div>
+</body>
+
 </html>

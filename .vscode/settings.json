@@ -1,4 +1,5 @@
 {
-    "debug.allowBreakpointsEverywhere": true,
-    "files.autoGuessEncoding": true
+  "debug.allowBreakpointsEverywhere": true,
+  "files.autoGuessEncoding": true,
+  "liveServer.settings.port": 5501
 }
